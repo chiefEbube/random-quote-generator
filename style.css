@@ -9,6 +9,10 @@
     box-sizing: border-box;
 }
 
+html{
+    font-size: 14px;
+}
+
 body{
     width: 100vw;
     height: 100vh;
@@ -23,42 +27,46 @@ main{
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.385);
+    position: relative;
 }
 
 .quote--card{
     background-color: rgba(242, 243, 245, 0.95);
-    width: 700px;
+    width: 50%;
+    min-width: 300px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 40px;
-    border-radius: 10px;
+    padding: 3rem;
+    border-radius: 1.5rem;
     text-align: center;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 .quote--card h1{
     font-weight: 600;
-    margin: 40px 0;
+    margin: 3rem 0;
     position: relative;
+    line-height: 1.2em;
+    color: rgb(63, 62, 62);
 }
 
 .quote--card h1::after{
     content: "";
     width: 30%;
     height: 3px;
-    border-radius: 3px;
+    border-radius: 3rem;
     background:  rgb(19, 140, 205);
     position: absolute;
-    bottom: -10px;
+    bottom: -20%;
     left: 50%;
     transform: translateX(-50%);
 }
 
 blockquote{
-    font-size: 20px;
-    min-height: 120px;
+    font-size: 1.2em;
+    min-height: 100px;
 }
 
 blockquote::before, blockquote::after{
@@ -67,7 +75,8 @@ blockquote::before, blockquote::after{
 
 span{
     display: block;
-    margin-top: 10px;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
     position: relative;
 }
 
@@ -76,20 +85,48 @@ span::before{
 }
 
 button{
-    font-size: 16px;
-    margin-top: 50px;
+    font-size: 1em;
+    margin-top: 1rem;
     background:  rgb(19, 140, 205);
     color: rgba(242, 243, 245, 0.95);
-    width: 150px;
-    height: 50px;
-    border-radius: 10px;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
     outline: none;
-    border: none;
+    border: 1px solid rgb(19, 140, 205);
     font-weight: 600;
     cursor: pointer;
     transition: all 300ms ease-in-out;
 }
 
 button:hover{
-    opacity: 0.8;
+    background-color: transparent;
+    color: rgb(19, 140, 205);
+}
+
+.share{
+    background-color: transparent;
+    border: 1px solid rgb(19, 140, 205);
+    color: rgb(19, 140, 205);
+    padding: 1rem;
+}
+
+.share:hover{
+    background:  rgb(19, 140, 205);
+    color: rgba(242, 243, 245, 0.95);   
+}
+
+.share i{
+    margin-right: 0.5rem;
+    font-size: 1.1em;
+}
+
+footer{
+    color: rgba(242, 243, 245, 0.95);
+    font-size: 0.9em;
+    width: fit-content;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 0;
+    right: 0;
+    margin: auto;
 }

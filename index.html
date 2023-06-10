@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Quote</title>
+    <title>Quote of the day</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4628654256.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -15,7 +16,12 @@
             <blockquote id="quote">...</blockquote>
             <span id="author">...</span>
             <button onclick="getQuote(apiUrl)">New Quote</button>
+            <button onclick="share()" class="share"><i class="fa-solid fa-share-nodes"></i>Share Quote</button>
         </div>
+
+        <footer>
+            Designed and developed by Ebube.
+        </footer>
     </main>
 
     <script src="./default.js"></script>
